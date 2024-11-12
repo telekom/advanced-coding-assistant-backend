@@ -1,0 +1,15 @@
+meta {
+  name: Get conversation by id
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{openai_url}}/v1/conversations/{{conversationId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  conversationId: 6ea2254d-8a9f-4547-90c2-6b068dd0369c
+}

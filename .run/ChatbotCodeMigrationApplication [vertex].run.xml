@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ChatbotCodeMigrationApplication [vertex]" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.telekom.ai4coding.chatbot.ChatbotCodeMigrationApplication" />
+    <module name="chatbot-openai-code-migration-app" />
+    <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=vertex" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.telekom.ai4coding.chatbot.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

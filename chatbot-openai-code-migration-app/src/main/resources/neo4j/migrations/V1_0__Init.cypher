@@ -1,0 +1,1 @@
+RETURN 'Init Neo4j Migrations';

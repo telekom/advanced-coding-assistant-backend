@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2024-06-24T06:52:20.980Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="SuBTQz3MrDTIjCO-FNFD" version="24.6.2" type="device">
+  <diagram name="Page-1" id="Ce3O1EkinNM9744vUmve">
+    <mxGraphModel dx="996" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-2" value="NEO4J&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;One source of truth&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="280.5" y="380" width="142" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-diGlD-Wiw9zA_FqCR4X-3" target="-diGlD-Wiw9zA_FqCR4X-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-3" value="Ingestion" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="291.5" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-diGlD-Wiw9zA_FqCR4X-6" target="-diGlD-Wiw9zA_FqCR4X-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-20" value="Save Operation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-diGlD-Wiw9zA_FqCR4X-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-6" value="Construct&amp;nbsp;&lt;div&gt;KnowledgeGraph&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="259" y="190" width="185" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="-diGlD-Wiw9zA_FqCR4X-9" target="-diGlD-Wiw9zA_FqCR4X-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350.5" y="600" as="sourcePoint" />
+            <mxPoint x="350.5" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-9" value="Spring Repository Object" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="291.5" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-10" value="Data operated by Repostory objects" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="69" y="480" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-11" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="179" y="380" width="50" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-12" value="Memory" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="484" y="225" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-diGlD-Wiw9zA_FqCR4X-12" target="-diGlD-Wiw9zA_FqCR4X-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="661.5" y="146.5" as="sourcePoint" />
+            <mxPoint x="663.25" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-180;" parent="1" vertex="1">
+          <mxGeometry x="621.5" y="200" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-15" value="Knowledge graph indexing and enrichment handled in memory" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="681.5" y="210" width="148.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Data model dichotomy&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="287.5" y="20" width="265" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-21" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="320" as="sourcePoint" />
+            <mxPoint x="820" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-22" value="&lt;b&gt;&lt;u&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Ingestion phase&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="39" y="270" width="131" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-diGlD-Wiw9zA_FqCR4X-23" value="&lt;b&gt;&lt;u&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Operating phase&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="39" y="340" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

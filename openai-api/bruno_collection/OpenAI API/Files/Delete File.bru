@@ -1,0 +1,19 @@
+meta {
+  name: Delete File
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{openai_url}}/v1/files/{{fileId}}
+  body: multipartForm
+  auth: none
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+vars:pre-request {
+  fileId: File Id
+}

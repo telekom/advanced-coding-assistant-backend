@@ -1,0 +1,26 @@
+meta {
+  name: Refresh Gitlab Repository
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{openai_url}}/v1/repositories/gitlab/{{projectId}}/refresh
+  body: none
+  auth: none
+}
+
+body:text {
+  /Users/A200236717/Desktop/projects/ai4coding-chatbot/chatbot-openai-code-migration-app
+}
+
+docs {
+  **Upload File or Local Repository**:
+  This API allows the upload of either a single file or a local repository by specifying the path in plain text.
+  
+  
+  **Request Body**:
+  The body must contain plain text representing either:
+  The file path to the single file.
+  The repository path to the local folder.
+}

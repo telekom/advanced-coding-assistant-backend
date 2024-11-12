@@ -1,0 +1,19 @@
+meta {
+  name: Rename conversation title by id
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{openai_url}}/v1/conversations/{{conversationId}}/rename?newTitle=New title
+  body: none
+  auth: none
+}
+
+params:query {
+  newTitle: New title
+}
+
+vars:pre-request {
+  conversationId: 6ea2254d-8a9f-4547-90c2-6b068dd0369c
+}

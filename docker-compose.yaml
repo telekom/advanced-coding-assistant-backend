@@ -1,0 +1,60 @@
+services:
+  database:
+    image: 'neo4j:5.20.0'
+    ports:
+      - '7474:7474'
+      - '7687:7687'
+    volumes:
+      - './data-neo4j:/data'
+    environment:
+      - NEO4J_AUTH=neo4j/neo4j.password
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_import_file_use__neo4j__config=true
+      - NEO4J_PLUGINS=["apoc"]
+
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "neo4j.password", "RETURN 1"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+    networks:
+      - aca-network
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.4
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - aca-network
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.13.4
+    container_name: logstash
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5001:5001"
+      - "9600:9600"
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    networks:
+      - aca-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.13.4
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5601:5601"
+    networks:
+      - aca-network
+
+networks:
+  aca-network:
+    driver: bridge

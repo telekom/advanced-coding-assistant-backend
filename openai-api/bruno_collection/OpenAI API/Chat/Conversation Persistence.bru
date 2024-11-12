@@ -1,0 +1,39 @@
+meta {
+  name: Conversation Persistence
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{openai_url}}/v1/chat/completions
+  body: json
+  auth: none
+}
+
+headers {
+  Persist-Conversation: true
+}
+
+body:json {
+  {
+    "messages": [
+      {
+          "role": "user",
+          "content": "Can you give me a general overview of this repository?"
+        }
+    ],
+    "model": "gpt-4-turbo-preview",
+    "frequency_penalty": "0",
+    "logit_bias": null,
+    "max_tokens": 100,
+    "n": 1,
+    "presence_penalty": "",
+    "stop": "",
+    "stream": "",
+    "temperature": "",
+    "top_p": "",
+    "user": "user1",
+    "function_call": "",
+    "functions": []
+  }
+}

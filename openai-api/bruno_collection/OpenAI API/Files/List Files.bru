@@ -1,0 +1,15 @@
+meta {
+  name: List Files
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{openai_url}}/v1/files?purpose=Conversation id
+  body: none
+  auth: none
+}
+
+params:query {
+  purpose: Conversation id
+}

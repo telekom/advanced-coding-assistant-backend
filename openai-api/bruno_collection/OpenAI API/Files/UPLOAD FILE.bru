@@ -1,0 +1,25 @@
+meta {
+  name: UPLOAD FILE
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{openai_url}}/v1/files?purpose=ConversationId
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  purpose: ConversationId
+}
+
+body:multipart-form {
+  file: @file(/Users/A200236717/Desktop/projects/Rust/advanced_coding_assistance/src/main.rs)
+  createdAt: 20240312
+}
+
+docs {
+  To Upload a File you will need to intiate a conversation first.
+  Since conversation id is required for it
+}

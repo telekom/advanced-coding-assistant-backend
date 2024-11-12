@@ -1,0 +1,1 @@
+CREATE INDEX text_node_id_index IF NOT EXISTS FOR (n:TextNode) ON (n.id);
