@@ -47,7 +47,7 @@ The application is made up of:
 * Neo4J database (started by `docker-compose.yaml`)
 * ELK stack (started by `docker-compose.yaml`)
 * Backend - Java SpringBoot application
-* Frontend - React application (TODO add link)
+* Frontend - React Application - https://github.com/telekom/advanced-coding-assistant-frontend
 
 Ideally, you should have `Docker Desktop` installed and `Java 21`.
 
@@ -84,8 +84,8 @@ Open up a terminal and locate your backend project folder and execute the follow
 your azure profile `advanced-coding-assistant-backend/chatbot-openai-code-migration-app/src/main/resources/application-azure.example.properties` (<<choose_llm,or you can choose>> a local LLM deployment or AWS Bedrock or Google Vertex...)
 by inserting the required data (azure.endpoint, azure.model, azure.api-key). After inserting these you will have to
 remove the `.example` extension from the properties file.
-5. For the Frontend please take a look at our Frontend Repository and its readme found (TODO add FE link)[here]
-6. Now you can start the Backend through the `ChatbotCodeMigrationApplication.java` and the React Frontend as explained in the FE readme (TODO add FE link)[here].
+5. For the Frontend please take a look at our Frontend Repository and its readme found https://github.com/telekom/advanced-coding-assistant-frontend[here]
+6. Now you can start the Backend through the `ChatbotCodeMigrationApplication.java` and the React Frontend as explained in the FE readme https://github.com/telekom/advanced-coding-assistant-frontend[here].
 
 [[choose_llm]]
 === Choosing an LLM Provider
@@ -147,7 +147,7 @@ When running the application as a JAR file, add to your command a suffix, e.g.: 
 
 For direct API usage, please see section <<direct-api, Direct API usage>>
 
-When using our (TODO add FE link)[Frontend]
+When using our https://github.com/telekom/advanced-coding-assistant-frontend[Frontend]
 start by uploading a repo:
 
 . In the lower left corner click on `Settings`
