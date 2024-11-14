@@ -4,7 +4,7 @@ image:https://img.shields.io/badge/Spring%20Boot-Latest-6DB33F?style=flat&logo=s
 image:https://img.shields.io/badge/Maven-3-C71A36?style=flat&logo=apache-maven&logoColor=white[Maven]
 
 // AI/ML Components
-image:https://img.shields.io/badge/LangChain4j-0.34.0-2496ED?style=flat[LangChain4j]
+image:https://img.shields.io/badge/LangChain4J-0.34.0-2496ED?style=flat[LangChain4J]
 image:https://img.shields.io/badge/OpenAI-Ready-412991?style=flat&logo=openai&logoColor=white[OpenAI]
 image:https://img.shields.io/badge/Azure%20OpenAI-Ready-0078D4?style=flat&logo=microsoft-azure&logoColor=white[Azure OpenAI]
 image:https://img.shields.io/badge/AWS%20Bedrock-Ready-0077D5?style=flat&logo=microsoft-azure&logoColor=white[Azure OpenAI]
