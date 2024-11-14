@@ -20,9 +20,7 @@ import dev.langchain4j.model.azure.AzureOpenAiChatModel;
 import dev.langchain4j.model.bedrock.BedrockAnthropicMessageChatModel;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.model.embedding.onnx.OnnxEmbeddingModel;
-import dev.langchain4j.model.embedding.onnx.PoolingMode;
-import dev.langchain4j.model.embedding.onnx.allminilml6v2.AllMiniLmL6V2EmbeddingModel;
+import dev.langchain4j.model.embedding.onnx.e5smallv2.E5SmallV2EmbeddingModel;
 import dev.langchain4j.model.input.Prompt;
 import dev.langchain4j.model.input.PromptTemplate;
 import dev.langchain4j.model.localai.LocalAiChatModel;
@@ -45,16 +43,11 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import software.amazon.awssdk.regions.Region;
 
-import java.io.File;
-import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.util.Collection;
 
@@ -325,24 +318,7 @@ public class AiClientConfig {
 
     @Bean
     EmbeddingModel embeddingModel(AcaProperties acaProperties) {
-        EmbeddingModel embeddingModel = new AllMiniLmL6V2EmbeddingModel();
-        if(acaProperties.embeddingModel().useCustomModel()){
-            try {
-                Resource modelResource = resourceLoader.getResource(acaProperties.embeddingModel().modelClassPath());
-                Resource tokenizerResource = resourceLoader.getResource(acaProperties.embeddingModel().tokenizerClassPath());
-                File modelFile = File.createTempFile("model", ".onnx");
-                File tokenizerFile = File.createTempFile("tokenizer", ".json");
-                Files.copy(modelResource.getInputStream(), modelFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                Files.copy(tokenizerResource.getInputStream(), tokenizerFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                PoolingMode poolingMode = PoolingMode.valueOf(acaProperties.embeddingModel().poolingMode());
-                embeddingModel = new OnnxEmbeddingModel(modelFile.getAbsolutePath(), tokenizerFile.getAbsolutePath(), poolingMode);
-                log.info("Is using " + modelResource.getFilename() + " as custom embedding model");
-            } catch (IOException e) {
-                log.error("Failed to load custom embedding model");
-                log.error(e.getMessage());
-                log.error("Using the default embedding model (AllMiniLmL6V2EmbeddingModel)");
-            }
-        }
+        EmbeddingModel embeddingModel = new E5SmallV2EmbeddingModel();
         return embeddingModel;
     }
 
