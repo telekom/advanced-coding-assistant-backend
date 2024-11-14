@@ -1,3 +1,6 @@
+= Advanced Coding Assistant
+:toc: left
+
 // Core Tech & Platform
 image:https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white[Java]
 image:https://img.shields.io/badge/Spring%20Boot-Latest-6DB33F?style=flat&logo=spring-boot&logoColor=white[Spring Boot]
@@ -23,9 +26,6 @@ image:https://img.shields.io/badge/Testcontainers-Ready-2496ED?style=flat&logo=d
 // Infrastructure
 image:https://img.shields.io/badge/Docker-Ready-2496ED?style=flat&logo=docker&logoColor=white[Docker]
 image:https://img.shields.io/badge/GitLab_API-Ready-FC6D26?style=flat&logo=gitlab&logoColor=white[GitLab]
-
-= Advanced Coding Assistant Overview
-:toc: left
 
 == Overview
 Advanced Coding Assistant is an experimental research and development (R&D) project designed as an innovative orchestration platform that enables semantic code understanding through interactive documentation. While fully functional, this project is primarily intended for research and experimentation purposes, and no artifacts will be distributed commercially. Its core purpose is to allow developers to have intelligent conversations with their code repositories, providing comprehensive code understanding through a combination of Knowledge Graph technology and Large Language Models (LLMs).
