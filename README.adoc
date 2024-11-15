@@ -12,6 +12,7 @@ image:https://img.shields.io/badge/OpenAI-Ready-412991?style=flat&logo=openai&lo
 image:https://img.shields.io/badge/Azure%20OpenAI-Ready-0078D4?style=flat&logo=microsoft-azure&logoColor=white[Azure OpenAI]
 image:https://img.shields.io/badge/AWS%20Bedrock-Ready-0077D5?style=flat&logo=microsoft-azure&logoColor=white[Azure OpenAI]
 image:https://img.shields.io/badge/Google%20Vertex%20AI-Ready-4285F4?style=flat&logo=google-cloud&logoColor=white[Vertex AI]
+image:https://img.shields.io/badge/OpenAI%20API-Ready-412881?style=flat&logo=openai&logoColor=white[OpenAI API]
 
 // Database
 image:https://img.shields.io/badge/Neo4j-Ready-008CC1?style=flat&logo=neo4j&logoColor=white[Neo4j]
