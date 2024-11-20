@@ -47,6 +47,30 @@ Advanced Coding Assistant is able to provide comprehensive code understanding du
 * **Implicit semantic data enrichment**: embeddings - intuitive understanding
 * **Explicit semantic data enrichment**: knowledge graphs - provides explainability and accountability.
 
+=== Supported Programming Languages
+
+[source]
+----
+* Bash
+* C
+* Common Lisp
+* C#
+* Go
+* HTML
+* Java
+* JavaScript
+* Perl
+* PHP
+* Python
+* R
+* Rust
+* SQL 
+* Swift
+* TypeScript
+* Visual Basic
+* VBScript
+----
+
 === Design
 image::readme-resources/aca_overview.drawio.png[Advanced Coding Assistant Overview]
 
