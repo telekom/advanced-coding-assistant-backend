@@ -47,6 +47,8 @@ Advanced Coding Assistant is able to provide comprehensive code understanding du
 * **Implicit semantic data enrichment**: embeddings - intuitive understanding
 * **Explicit semantic data enrichment**: knowledge graphs - provides explainability and accountability.
 
+video::4SqG5EA10lo[youtube]
+
 === Supported Programming Languages
 
 [source]
