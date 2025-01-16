@@ -461,6 +461,10 @@ We support two different RAG approaches:
 
 === Agentic RAG
 
+**Watch our Agentic RAG video:**
+[link=https://www.youtube.com/watch?v=wBBsOd9yHX4]
+image::https://img.youtube.com/vi/wBBsOd9yHX4/0.jpg[Watch the Agentic RAG video]
+
 **Note**: Agentic RAG is available only if the LLM provider supports tools/functions according to OpenAI's specification:
 https://platform.openai.com/docs/guides/function-calling ; If you are using a provider which doesn't support OpenAI
 function calling (typically a local deployment), use the <<state_machine,State Machine RAG>>
